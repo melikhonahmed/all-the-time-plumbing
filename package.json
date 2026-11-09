@@ -1,0 +1,14 @@
+{
+  "name": "all-the-time-plumbing",
+  "version": "1.0.0",
+  "description": "Custom website for All The Time Plumbing (Houston, TX)",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}
+

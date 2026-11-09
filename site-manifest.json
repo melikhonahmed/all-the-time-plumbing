@@ -1,0 +1,69 @@
+{
+  "projectId": "9668731941418926547",
+  "title": "All The Time Plumbing - Modern Landing Page Redesign",
+  "requestedScreenId": "0349ef2fbc5c4179b9c69b9a0fa73e8a",
+  "importedAt": "2026-11-07T17:50:00Z",
+  "designSystem": {
+    "name": "assets/8e90fbe5ba054920915e0f73f73f893a",
+    "displayName": "Reliable Industrial Precision",
+    "primaryColor": "#e53924",
+    "colorMode": "LIGHT"
+  },
+  "screens": [
+    {
+      "id": "0349ef2fbc5c4179b9c69b9a0fa73e8a",
+      "sourceScreen": "projects/9668731941418926547/screens/0349ef2fbc5c4179b9c69b9a0fa73e8a",
+      "title": "All The Time Plumbing - Variant 1 (Arched Editorial Style)",
+      "slug": "variant-1-arched-editorial",
+      "filename": "variants/variant-1-arched-editorial-0349ef2f.html",
+      "isActive": true,
+      "width": 2560,
+      "height": 13918,
+      "step": 32
+    },
+    {
+      "id": "3ef646dd4cc74f8b805c662505f9b163",
+      "sourceScreen": "projects/9668731941418926547/screens/3ef646dd4cc74f8b805c662505f9b163",
+      "title": "All The Time Plumbing - Variant 2 (Warm Organic Cards)",
+      "slug": "variant-2-warm-organic-cards",
+      "filename": "variants/variant-2-warm-organic-cards-3ef646dd.html",
+      "isActive": false,
+      "width": 2560,
+      "height": 11354,
+      "step": 66
+    },
+    {
+      "id": "be9ce1b6eaa740348852f3f809ea7020",
+      "sourceScreen": "projects/9668731941418926547/screens/be9ce1b6eaa740348852f3f809ea7020",
+      "title": "All The Time Plumbing - Variant 3 (Dual-Tone Arch Showcase)",
+      "slug": "variant-3-dual-tone-arch",
+      "filename": "variants/variant-3-dual-tone-arch-be9ce1b6.html",
+      "isActive": false,
+      "width": 2560,
+      "height": 10604,
+      "step": 70
+    },
+    {
+      "id": "8a87b54dc271469fbb891c6a42071914",
+      "sourceScreen": "projects/9668731941418926547/screens/8a87b54dc271469fbb891c6a42071914",
+      "title": "All The Time Plumbing - Modernized Landing Page",
+      "slug": "modernized-landing-page",
+      "filename": "variants/modernized-landing-page-8a87b54d.html",
+      "isActive": false,
+      "width": 2560,
+      "height": 11380,
+      "step": 68
+    },
+    {
+      "id": "d85fdb4090c74279b9b6d9fe69954562",
+      "sourceScreen": "projects/9668731941418926547/screens/d85fdb4090c74279b9b6d9fe69954562",
+      "title": "All The Time Plumbing - Variant 1 (Badge Fixed)",
+      "slug": "variant-1-badge-fixed",
+      "filename": "variants/variant-1-badge-fixed-d85fdb40.html",
+      "isActive": false,
+      "width": 2560,
+      "height": 13938,
+      "step": 72
+    }
+  ]
+}
