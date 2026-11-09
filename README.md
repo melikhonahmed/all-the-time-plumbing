@@ -1,65 +1,78 @@
 # All The Time Plumbing
 
-This repository contains the custom-coded website and design system for **All The Time Plumbing** (Houston Master Plumber, License #41889).
+A responsive website for All The Time Plumbing, a residential and commercial plumbing company serving Houston, Texas. The site highlights plumbing services, the company’s master plumber, customer reviews, and ways to request service.
 
----
+**Business:** All The Time Plumbing · Houston, TX
 
-## 🚀 Live Local Preview
+**Phone:** [(713) 705-3926](tel:7137053926)
 
-To launch the local preview server:
+**License:** Texas State Master Plumber MPL #41889
+
+## Website features
+
+- Responsive layouts for desktop, tablet, and mobile
+- Service listings and company information
+- Tap-to-call phone links and a mobile emergency call button
+- Mobile navigation menu
+- Service request modal
+- Customer testimonials and social links
+- Locally stored images and a logo favicon
+
+## Preview locally
+
+### Requirements
+
+- Node.js and npm
+
+### Start the preview server
 
 ```bash
+npm install
 npm start
-# or:
-npx serve -l 3000 .
 ```
 
-Then visit:
-- **Active Website (`index.html`):** [http://localhost:3000](http://localhost:3000)
+Open [http://localhost:3000](http://localhost:3000) in your browser. The `dev` script starts the same local preview server:
 
----
-
-## 📁 Project Structure
-
-```
-all the time plumbing/
-├── index.html                   # Primary active landing page
-├── DESIGN.md                    # Brand design system specification (tokens, typography, elevation, spacing)
-├── design-system.json           # Raw design tokens and project styling metadata
-├── site-manifest.json           # Project manifest and asset metadata
-├── package.json                 # Project configuration and preview scripts
-├── images/                      # Locally downloaded high-resolution assets & brand logos
-│   ├── logo.png                 # Brand logo
-│   ├── hero-infrastructure.jpg  # Hero pipe infrastructure photo
-│   ├── tom-moreno.jpg           # Master Plumber Tom Moreno photo
-│   ├── plumbing-repairs.jpg     # Plumbing service technician
-│   ├── water-heater.jpg         # Water heater installation
-│   ├── water-filtration.jpg     # Water filtration systems
-│   ├── leak-detection.jpg       # Slab and hidden leak detection
-│   ├── customer-guarantee.jpg   # Happy Houston homeowner
-│   └── video-spotlight.jpg      # Video spotlight thumbnail
-└── assets/                      # Supporting site assets and custom UI files
+```bash
+npm run dev
 ```
 
----
+## Deploy to Vercel
 
-## 🎨 Design System: Reliable Industrial Precision
+This is a static website and does not require a Vercel-specific package or build step. The included `vercel.json` tells Vercel to serve the project root directly without installing dependencies.
 
-- **Primary Brand Red:** `#E53924` (Urgent, high-trust emergency actions)
-- **Deep Charcoal:** `#14171A` / `#1A1D20` (Architectural ground & contrast)
-- **Warm Cream Background:** `#FAF8F5` (Clean, sanitary residential comfort)
-- **Cream Card Surface:** `#F4F0E8` / `#FFFFFF`
-- **Typography:**
-  - Headlines & CTAs: `Plus Jakarta Sans` (Weights 700 to 900)
-  - Body & Microcopy: `Inter` (Weights 400 to 600)
-- **Shapes & Elevation:**
-  - Signature Arched Radii: `160px 160px 24px 24px`
-  - Base Card Radius: `8px` (`0.5rem`)
-  - Status Badges: Pill (`9999px`)
-- **Key Features:**
-  - 24/7 Live Emergency Dispatch sticky indicator
-  - Tap-to-call direct dial `(713) 705-3926`
-  - Interactive "Book Online" service estimate modal
-  - Responsive mobile navigation drawer with hamburger toggle
-  - Complete zero-latency offline imagery
+To deploy from GitHub:
 
+1. Import the repository in Vercel.
+2. Keep the project root set to `.` and the framework preset set to **Other**.
+3. Deploy. Vercel will serve `index.html` and the files in `images/`.
+
+## Project structure
+
+```text
+.
+├── index.html           # Website and page styles/scripts
+├── images/              # Website photos and logos
+├── vercel.json          # Vercel static deployment settings
+├── DESIGN.md            # Brand and visual design guidelines
+├── design-system.json   # Design tokens and project styling metadata
+├── image_mapping.json   # Image asset mappings
+├── site-manifest.json   # Site and design manifest
+└── package.json         # Project metadata and preview scripts
+```
+
+## Design
+
+The visual system pairs a warm, light background with charcoal surfaces and a red accent:
+
+| Token | Color |
+| --- | --- |
+| Brand red | `#E53924` |
+| Deep charcoal | `#14171A` |
+| Warm cream | `#FAF8F5` |
+
+The page uses Plus Jakarta Sans, Tailwind CSS via its CDN, and locally stored image assets. Google Fonts are used for typography.
+
+## Notes
+
+This repository contains the website source. The booking form currently demonstrates a front-end request flow; connect it to a service or backend to receive and process submissions.
